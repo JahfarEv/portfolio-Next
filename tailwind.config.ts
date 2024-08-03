@@ -12,7 +12,11 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ["Poppins"]
-      }
+      },
+      colors: {
+        'custom-blue': '#0D8CDC',
+        'custom-green': '#11B0AB',
+      },
     },
   },
   plugins: [],
