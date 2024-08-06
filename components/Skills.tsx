@@ -13,7 +13,7 @@ const Skills = () => {
       </h1>
       <div className="w-[80%] mx-auto pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center">
         <div>
-          <SkilsItem title="React developer" year="FRONT END" />
+          <SkilsItem title="React developer" year="FRONT END"/>
           {/* <SkilsItem title="Mern stack developer" year="2016 - 2020"/> */}
           <SkilsLanguage
             skill1="Javascript"

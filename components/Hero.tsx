@@ -24,7 +24,7 @@ const Hero = () => {
               </button>
           </div>
         </div>
-        <div className="relative w-[450px] h-[450px] bg-[#55e6a5] rounded-full hidden lg:flex items-center justify-center">
+        <div data-aos='zoom-in' className="relative w-[450px] h-[450px] bg-[#55e6a5] rounded-full hidden lg:flex items-center justify-center">
           <Image
             src="/user.jpeg"
             alt="user"
