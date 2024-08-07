@@ -9,8 +9,8 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css';
+
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
@@ -22,8 +22,7 @@ const HomePage = () => {
   useEffect(()=>{
 
 
-    // You can also pass an optional settings object
-    // below listed default settings
+   
     AOS.init({
       // Global settings:
       disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
