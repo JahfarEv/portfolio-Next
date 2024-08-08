@@ -3,7 +3,7 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className='bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]'>
+    <div className='bg-[#121212] pt-[4rem] md:pt-[8rem]'>
         <p className="heading">
             My <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">Services</span>
         </p>

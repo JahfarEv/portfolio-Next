@@ -4,7 +4,7 @@ import SkilsLanguage from "./SkilsLanguage";
 
 const Skills = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen pt-[4rem] md:pt-[8rem] pb-[5rem] bg-[#09101a]">
+    <div className="flex items-center justify-center min-h-screen pt-[4rem] md:pt-[8rem] pb-[2rem] bg-[#09101a]">
   <div className="w-[80%] mx-auto text-center">
     <h1 className="heading">
       Education &{" "}
@@ -17,33 +17,33 @@ const Skills = () => {
     <SkilsItem service="FRONT END" skill1="Javascript"
       skill2="React js"
       skill3="Next js"
-      skill4="Redux toolkit"/>
+      skill4="Redux toolkit"
+      skill5="Tailwind css"
+      skill6="Figma"/>
     <SkilsLanguage
       skill1="Javascript"
       skill2="React js"
       skill3="Next js"
-      skill4="Redux toolkit"
       level1="w-[91%]"
       level2="w-[88%]"
       level3="w-[80%]"
-      level4="w-[80%]"
     />
   </div>
   <div className="flex flex-col items-center">
     <SkilsItem service="BACK END" 
-    skill1="Tailwind css"
-    skill2="Node js"
-    skill3="Express js"
-    skill4="Mongodb"/>
+    skill1="Node js"
+    skill2="Express js"
+    skill3="Mongo db"
+    skill4="AWS"
+    skill5="Socket IO"
+    skill6="Swagger"/>
     <SkilsLanguage
-      skill1="Tailwind css"
-      skill2="Node js"
-      skill3="Express js"
-      skill4="Mongodb"
+      skill1="Node js"
+      skill2="Express js"
+      skill3="Mongodb"
       level1="w-[81%]"
       level2="w-[78%]"
       level3="w-[73%]"
-      level4="w-[70%]"
     />
   </div>
 </div>
