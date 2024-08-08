@@ -14,32 +14,32 @@ level4:string
 const SkilsLanguage = ({skill1,skill2,skill3,skill4,level1,level2,level3,level4}:Props) => {
   return (
     <div>
-      <div className='relative mb-[3rem]'>
-        <h1 className='p-5 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold'>
-            {skill1}
-        </h1>
-        <span className={`${level1} bottom-0 h-[6px] absolute bg-teal-400`}></span>
-      </div>
-      <div className='relative mb-[3rem]'>
-        <h1 className='p-5 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold'>
-            {skill2}
-        </h1>
-        <span className={`${level2} bottom-0 h-[6px] absolute bg-teal-400`}></span>
-      </div>
-      <div className='relative mb-[3rem]'>
-        <h1 className='p-5 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold'>
-            {skill3}
-        </h1>
-        <span className={`${level3} bottom-0 h-[6px] absolute bg-teal-400`}></span>
-      </div>
+  <div className="relative mb-[3rem]">
+    <h1 className="p-5 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold">
+      {skill1}
+    </h1>
+    <span className={`${level1} h-[6px] absolute bottom-0 left-0 bg-teal-400`}></span>
+  </div>
+  <div className="relative mb-[3rem]">
+    <h1 className="p-5 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold">
+      {skill2}
+    </h1>
+    <span className={`${level2} h-[6px] absolute bottom-0 left-0 bg-teal-400`}></span>
+  </div>
+  <div className="relative mb-[3rem]">
+    <h1 className="p-5 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold">
+      {skill3}
+    </h1>
+    <span className={`${level3} h-[6px] absolute bottom-0 left-0 bg-teal-400`}></span>
+  </div>
+  <div className="relative mb-[3rem]">
+    <h1 className="p-5 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold">
+      {skill4}
+    </h1>
+    <span className={`${level4} h-[6px] absolute bottom-0 left-0 bg-teal-400`}></span>
+  </div>
+</div>
 
-      <div className='relative mb-[3rem]'>
-        <h1 className='p-5 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold'>
-            {skill4}
-        </h1>
-        <span className={`${level4} bottom-0 h-[6px] absolute bg-teal-400`}></span>
-      </div>
-    </div>
   )
 }
 

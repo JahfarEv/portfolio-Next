@@ -4,6 +4,7 @@ import React from "react";
 
 const About = () => {
   return (
+    <>
     <div className="bg-[#121121] pb-[3rem] pt-[4rem] md:pt-[8rem]">
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
         <div>
@@ -38,12 +39,13 @@ const About = () => {
             objectFit="contain"
             className="relative z-[11] w-[100%] object-contain"
           />
-          <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] top-[-2rem] right-[-2rem] ">
+          <div className="absolute w-[100%] h-[100%] z-[10] bg-teal-500 top-[-2rem] right-[-2rem] ">
 
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 };
 
