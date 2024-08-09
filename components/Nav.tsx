@@ -11,6 +11,8 @@ const Nav = ({ openNav }: Props) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      console.log("ok");
+      
     }
   };
 
@@ -27,8 +29,8 @@ const Nav = ({ openNav }: Props) => {
         <div className="nav-link" onClick={() => handleScroll('projects')}>PROJECTS</div>
         <div className="nav-link" onClick={() => handleScroll('skills')}>SKILLS</div>
         <div className="nav-link" onClick={() => handleScroll('footer')}>CONTACT</div>
-        <div onClick={openNav}>
-          <Bars3Icon className="w-[20rem] md:hidden h-[2rem] cursor-pointer text-yellow-300" />
+        <div className="flex md:hidden flex-1 justify-end">
+          <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300" onClick={openNav}/>
         </div>
       </div>
     </div>
