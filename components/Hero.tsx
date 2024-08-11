@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[3rem] h-full items-center">
         <div>
           <h1 className="text-[35px] md:text-[50px] text-white font-bold">
-            HI, I'M{" "}
+            HI, I'M
             <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
               JAHFAR ALI!
             </span>
