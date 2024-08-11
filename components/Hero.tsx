@@ -5,14 +5,15 @@ import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 
 const Hero = () => {
   return (
-    <div className="h-[88vh] mt-[10vh] bg-cover bg-center">
+    <div className="h-[100vh] bg-cover bg-center">
       <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[3rem] h-full items-center">
         <div>
-        <h1 className="text-[35px] md:text-[50px] text-white font-bold">
-  {/* eslint-disable-next-line react/no-unescaped-entities */}
-  HI, I'M <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">JAHFAR ALI!</span>
-</h1>
-
+          <h1 className="text-[35px] md:text-[50px] text-white font-bold">
+            HI, I'M{" "}
+            <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
+              JAHFAR ALI!
+            </span>
+          </h1>
 
           <TextEffect />
           <p className="mt-[1.5rem] text-[20px] text-[#ffffff92]">

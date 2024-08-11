@@ -4,7 +4,7 @@ import React from 'react'
 const Services = () => {
   return (
     <div className='bg-[#121212] pt-[4rem] md:pt-[8rem]'>
-        <p className="heading">
+        <p className="heading lg:mt-[-10vh]">
             My <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">Services</span>
         </p>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] mx-auto items-center gap-[3rem] mt-[4rem] text-white'>

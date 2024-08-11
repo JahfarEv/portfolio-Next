@@ -5,21 +5,23 @@ import SkilsLanguage from "./SkilsLanguage";
 const Skills = () => {
   return (
     <div className="flex items-center justify-center min-h-screen pt-[4rem] md:pt-[8rem] pb-[2rem] bg-[#09101a]">
-  <div className="w-[80%] mx-auto text-center">
+  <div className="w-[80%] mx-auto text-center lg:mt-[-10vh]">
     <h1 className="heading">
       Education &{" "}
       <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
         Skill
       </span>
     </h1>
-    <div className="pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] lg:grid-cols-2 gap-x-8">
+    <div className=" lg:mt-[-10vh] pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] lg:grid-cols-2 gap-x-8">
   <div className="flex flex-col items-center">
     <SkilsItem service="FRONT END" skill1="Javascript"
       skill2="React js"
       skill3="Next js"
       skill4="Redux toolkit"
       skill5="Tailwind css"
-      skill6="Figma"/>
+      skill6="Figma"
+      skill7="Typescript"
+/>
     <SkilsLanguage
       skill1="Javascript"
       skill2="React js"
@@ -36,7 +38,8 @@ const Skills = () => {
     skill3="Mongo db"
     skill4="AWS"
     skill5="Socket IO"
-    skill6="Swagger"/>
+    skill6="Swagger"
+    skill7="Swagger"/>
     <SkilsLanguage
       skill1="Node js"
       skill2="Express js"

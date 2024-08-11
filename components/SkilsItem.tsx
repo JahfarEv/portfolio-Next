@@ -8,15 +8,17 @@ interface Props {
   skill4: string;
   skill5: string;
   skill6: string;
+  skill7: string;
+
 }
 
-const SkilsItem = ({ service, skill1, skill2, skill3, skill4, skill5, skill6 }: Props) => {
-  const skills = [skill1, skill2, skill3, skill4, skill5, skill6];
+const SkilsItem = ({ service, skill1, skill2, skill3, skill4, skill5, skill6, skill7 }: Props) => {
+  const skills = [skill1, skill2, skill3, skill4, skill5, skill6, skill7];
 
   return (
     <div className="mb-[4rem] md:mb-[8rem]">
       <div className="text-center">
-        <span className="inline-block px-[2rem] py-[0.9rem] text-teal-400 font-bold text-[18px] border-[2px] border-teal-400 rounded-3xl">
+        <span className="inline-block py-[0.9rem] px-4 text-teal-400 font-bold text-[18px] border-[2px] border-teal-400 rounded-3xl ">
           {service}
        
         {/* <h1 className="mt-[2rem] font-semibold capitalize text-[20px] sm:text-[25px] md:text-[30px] text-white">
