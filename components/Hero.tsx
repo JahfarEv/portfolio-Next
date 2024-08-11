@@ -5,7 +5,7 @@ import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 
 const Hero = () => {
   return (
-    <div className="h-[88vh] bg-[url('/images/banner.jpg')] mt-[10vh] bg-cover bg-center">
+    <div className="h-[88vh] mt-[10vh] bg-cover bg-center">
       <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[3rem] h-full items-center">
         <div>
           <h1 className="text-[35px] md:text-[50px] text-white font-bold">
@@ -24,9 +24,9 @@ const Hero = () => {
               </button>
           </div>
         </div>
-        <div data-aos='zoom-in' className="relative w-[450px] h-[450px] bg-[#55e6a5] rounded-full hidden lg:flex items-center justify-center">
+        <div data-aos='zoom-in' className="relative w-[450px] h-[450px] rounded-full hidden lg:flex items-center justify-center mt-[15vh]">
           <Image
-            src="/user.jpeg"
+            src="/profile2.png"
             alt="user"
             layout="fill"
             objectFit="cover"
