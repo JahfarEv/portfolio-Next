@@ -10,6 +10,7 @@ import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ContactForm from "@/components/Contact";
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
@@ -48,6 +49,9 @@ const HomePage = () => {
         </div>
         <div id="projects">
           <Projects />
+        </div>
+        <div className="absolute left-20 bottom-16 w-[70%] md:w-[30%]">
+          <ContactForm />
         </div>
         <Footer />
       </div>
