@@ -50,9 +50,9 @@ const HomePage = () => {
         <div id="projects">
           <Projects />
         </div>
-        <div className="absolute left-20 bottom-16 w-[70%] md:w-[30%]">
+        {/* <div className="absolute left-20 bottom-16 w-[70%] md:w-[30%]"> */}
           <ContactForm />
-        </div>
+        {/* </div> */}
         <Footer />
       </div>
     </div>

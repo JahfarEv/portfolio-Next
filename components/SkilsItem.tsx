@@ -18,7 +18,7 @@ const SkilsItem = ({ service, skill1, skill2, skill3, skill4, skill5, skill6, sk
   return (
     <div className="mb-[4rem] md:mb-[8rem]">
       <div className="text-center">
-        <span className="inline-block py-[0.9rem] px-4 text-teal-400 font-bold text-[18px] border-[2px] border-teal-400 rounded-3xl ">
+        <span className="inline-block py-[0.9rem] px-4 text-teal-400 font-bold text-[18px] border-[2px] border-teal-400 rounded-3xl w-full">
           {service}
        
         {/* <h1 className="mt-[2rem] font-semibold capitalize text-[20px] sm:text-[25px] md:text-[30px] text-white">
@@ -38,7 +38,6 @@ const SkilsItem = ({ service, skill1, skill2, skill3, skill4, skill5, skill6, sk
               stroke="#ffffff"
               strokeWidth="0.00024000000000000003"
             >
-              {/* Your SVG content */}
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
