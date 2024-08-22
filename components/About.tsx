@@ -33,13 +33,13 @@ const About = () => {
         </div>
         <div className="lg:w-[450px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[450px] w-[300px] h-[300px] relative" >
           <Image
-            src="/user.jpeg"
+            src="/photo1.jpg"
             alt="user"
             layout="fill"
             objectFit="contain"
             className="relative z-[11] w-[100%] object-contain"
           />
-          <div className="absolute w-[100%] h-[100%] z-[10] bg-teal-500 top-[-2rem] right-[-2rem] ">
+          <div className="absolute w-[100%] h-[110%] z-[10] bg-teal-500 top-[-1rem] right-[-1rem] bottom-[-1rem] left-[-1rem]">
 
           </div>
         </div>
