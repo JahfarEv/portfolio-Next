@@ -12,13 +12,13 @@ const Skills = () => {
         Skill
       </span>
     </h1>
-    <div className=" lg:mt-[-10vh] pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 gap-[2rem] lg:grid-cols-2 gap-x-8">
+    <div className=" lg:mt-[-10vh] pt-[4rem] md:pt-[8rem] grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 gap-[2rem] lg:grid-cols-2 gap-x-8">
   <div className="flex flex-col items-center">
     <SkilsItem service="FRONT END" skill1="Javascript"
       skill2="React js"
       skill3="Next js"
-      skill4="Redux toolkit"
-      skill5="Tailwind css"
+      skill4="Redux"
+      skill5="Tailwind"
       skill6="Figma"
       skill7="Typescript"
 />

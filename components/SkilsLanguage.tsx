@@ -11,9 +11,9 @@ level3:string
 
 const SkilsLanguage = ({skill1,skill2,skill3,level1,level2,level3}:Props) => {
   return (
-    <div>
-  <div className="relative mb-[3rem]">
-    <h1 className="p-5 w-[400px] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold">
+    <div className='w-[300px]'>
+  <div className="relative mb-[3rem] ">
+    <h1 className="p-5 w-[100%] uppercase bg-gray-800 rounded-sm text-white text-[20px] font-bold">
       {skill1}
     </h1>
     <span className={`${level1} h-[6px] absolute bottom-0 left-0 bg-teal-400`}></span>

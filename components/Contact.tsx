@@ -4,12 +4,12 @@ const ContactForm = () => {
   return (
     <div className="pt-8 pb-4 md:pt-[8rem] md:pb-[1rem] flex flex-col items-center w-full">
 
-      <h1 className="heading lg:mt-[-10vh]">
-        Contact
-        <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
-          -me{" "}
-        </span> 
-      </h1>{" "}
+<h2 className="text-[25px] md:text-[35px] lg:text-[45px] md:leading-[3rem] leading-[2rem] capitalize mb-[3rem] font-bold text-white">
+              CONTACT{" "}
+              <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">
+                ME
+              </span>
+            </h2>
     <form className="w-full flex justify-center sm:w-full">
       <div className="border border-none rounded-3xl p-5 bg-gray-800 mt-5 lg:w-2/3  max-md:w-[90%] ">
         <div className="mb-3">

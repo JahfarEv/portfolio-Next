@@ -50,9 +50,9 @@ const HomePage = () => {
         <div id="projects">
           <Projects />
         </div>
-        <div id="contact">
+        {/* <div id="contact">
           <ContactForm />
-        </div>
+        </div> */}
         <Footer />
       </div>
     </div>

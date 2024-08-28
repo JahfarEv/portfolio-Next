@@ -18,7 +18,7 @@ const SkilsItem = ({ service, skill1, skill2, skill3, skill4, skill5, skill6, sk
   return (
     <div className="mb-[4rem] md:mb-[8rem]">
       <div className="text-center">
-        <span className="inline-block py-[0.9rem] px-4 text-teal-400 font-bold text-[18px] border-[2px] border-teal-400 rounded-3xl w-full">
+        <span className="inline-block px-4 text-teal-400 font-bold text-[18px] border-[2px] border-teal-400 rounded-3xl w-full">
           {service}
        
         {/* <h1 className="mt-[2rem] font-semibold capitalize text-[20px] sm:text-[25px] md:text-[30px] text-white">
@@ -28,7 +28,7 @@ const SkilsItem = ({ service, skill1, skill2, skill3, skill4, skill5, skill6, sk
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full md:mt-5 justify-center">
         {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center mx-auto max-w-[200px] min-w-[150px] mb-5">
+          <div key={index} className="flex flex-col items-center mx-auto  mb-5">
             <svg
               width="30px"
               height="30px"
