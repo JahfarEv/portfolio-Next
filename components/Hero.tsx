@@ -62,12 +62,13 @@ const Hero = () => {
       <div className="w-[90%] md:w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 h-full items-center relative">
         {/* Text Content */}
         <div className="order-2 lg:order-1 text-center lg:text-left">
-          <h1 className="text-[28px] sm:text-[35px] md:text-[45px] lg:text-[50px] text-white font-bold mb-4">
-            HI, I'M
-            <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent block mt-2">
-              JAHFAR ALI!
-            </span>
-          </h1>
+        <h1 className="text-[28px] sm:text-[35px] md:text-[45px] lg:text-[50px] text-white font-bold mb-4">
+  {`HI, I'M`}
+  <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent block mt-2">
+    JAHFAR ALI!
+  </span>
+</h1>
+
 
           <TextEffect />
           <p className="mt-4 md:mt-[1.5rem] text-[16px] sm:text-[18px] md:text-[20px] text-[#ffffff92] px-2 sm:px-0">
