@@ -63,11 +63,12 @@ const Hero = () => {
         {/* Text Content */}
         <div className="order-2 lg:order-1 text-center lg:text-left">
         <h1 className="text-[28px] sm:text-[35px] md:text-[45px] lg:text-[50px] text-white font-bold mb-4">
-  {`HI, I'M`}
+  HI, I&apos;M
   <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent block mt-2">
     JAHFAR ALI!
   </span>
 </h1>
+
 
 
           <TextEffect />
