@@ -24,10 +24,10 @@ const MobileNav = ({ nav, closeNav }: Props) => {
     >
       <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center space-y-4 ">
         <div onClick={() => handleScroll('hero')} className="nav-link-mobile">HOME</div>
-        <div onClick={() => handleScroll('services')} className="nav-link-mobile">SERVICES</div>
         <div onClick={() => handleScroll('about')} className="nav-link-mobile">ABOUT</div>
-        <div onClick={() => handleScroll('projects')} className="nav-link-mobile">PROJECTS</div>
+        <div onClick={() => handleScroll('services')} className="nav-link-mobile">SERVICES</div>
         <div onClick={() => handleScroll('skills')} className="nav-link-mobile">SKILLS</div>
+        <div onClick={() => handleScroll('projects')} className="nav-link-mobile">PROJECTS</div>
         <div onClick={() => handleScroll('footer')} className="nav-link-mobile">CONTACT</div>
       </div>
       <div onClick={closeNav} 

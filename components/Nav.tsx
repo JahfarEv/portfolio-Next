@@ -24,10 +24,10 @@ const Nav = ({ openNav }: Props) => {
           <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">ALI</span>
         </h1>
         <div className="nav-link" onClick={() => handleScroll('hero')}>HOME</div>
-        <div className="nav-link" onClick={() => handleScroll('services')}>SERVICES</div>
         <div className="nav-link" onClick={() => handleScroll('about')}>ABOUT</div>
-        <div className="nav-link" onClick={() => handleScroll('projects')}>PROJECTS</div>
+        <div className="nav-link" onClick={() => handleScroll('services')}>SERVICES</div>
         <div className="nav-link" onClick={() => handleScroll('skills')}>SKILLS</div>
+        <div className="nav-link" onClick={() => handleScroll('projects')}>PROJECTS</div>
         <div className="nav-link" onClick={() => handleScroll('footer')}>CONTACT</div>
         <div className="flex md:hidden flex-1 justify-end">
           <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300" onClick={openNav}/>
