@@ -26,7 +26,7 @@ const SkilsItem = ({ service, skill1, skill2, skill3, skill4, skill5, skill6, sk
         </h1> */}
      
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full md:mt-5 justify-center">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 w-full md:mt-5 justify-center">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center mx-auto  mb-5">
             <svg

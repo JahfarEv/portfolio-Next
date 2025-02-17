@@ -28,7 +28,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
         <div onClick={() => handleScroll('about')} className="nav-link-mobile">ABOUT</div>
         <div onClick={() => handleScroll('projects')} className="nav-link-mobile">PROJECTS</div>
         <div onClick={() => handleScroll('skills')} className="nav-link-mobile">SKILLS</div>
-        <div onClick={() => handleScroll('contact')} className="nav-link-mobile">CONTACT</div>
+        <div onClick={() => handleScroll('footer')} className="nav-link-mobile">CONTACT</div>
       </div>
       <div onClick={closeNav} 
         className="absolute z-[100000000] cursor-pointer top-[2rem] right-[2rem] w-[2rem] h-[2rem] text-yellow-400">

@@ -5,7 +5,7 @@ import SkilsLanguage from "./SkilsLanguage";
 const Skills = () => {
   return (
     <div className="flex items-center justify-center min-h-screen pt-[4rem] md:pt-[8rem] pb-[2rem] bg-[#09101a]">
-  <div className="w-[80%] mx-auto text-center lg:mt-[-10vh]">
+  <div className="w-[80%] mx-auto  lg:mt-[-10vh]">
     <h1 className="heading">
       Education &{" "}
       <span className="bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">

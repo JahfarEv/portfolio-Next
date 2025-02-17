@@ -53,7 +53,9 @@ const HomePage = () => {
         {/* <div id="contact">
           <ContactForm />
         </div> */}
+        <div id="footer">
         <Footer />
+        </div>
       </div>
     </div>
   );

@@ -28,7 +28,7 @@ const Nav = ({ openNav }: Props) => {
         <div className="nav-link" onClick={() => handleScroll('about')}>ABOUT</div>
         <div className="nav-link" onClick={() => handleScroll('projects')}>PROJECTS</div>
         <div className="nav-link" onClick={() => handleScroll('skills')}>SKILLS</div>
-        <div className="nav-link" onClick={() => handleScroll('contact')}>CONTACT</div>
+        <div className="nav-link" onClick={() => handleScroll('footer')}>CONTACT</div>
         <div className="flex md:hidden flex-1 justify-end">
           <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300" onClick={openNav}/>
         </div>
