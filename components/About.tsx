@@ -22,7 +22,7 @@ const About = () => {
             I’m a passionate MERN Stack Developer with hands-on experience in building dynamic and responsive web applications. I specialize in React.js for front-end development, Node.js for backend services, and have successfully completed several full-stack projects. My focus is on creating efficient, scalable, and user-friendly solutions that bring ideas to life.
           </p>
         </div>
-        <Link href="https://www.linkedin.com/in/jahfarali">
+        <Link href="https://www.linkedin.com/in/jahfarali" target="black">
           <button className="px-[2rem] hover:bg-teal-500 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-white text-black flex items-center space-x-2">
             <p>Linked In</p>
             <ArrowTopRightOnSquareIcon className="w-[1.6rem] h-[1.7rem] text-black" />
@@ -33,7 +33,7 @@ const About = () => {
     {/* Right Side - Image */}
     <div className="order-1 lg:order-2 flex justify-center lg:justify-end self-end w-full ">
     <div className="relative w-[300px] h-[300px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[550px] lg:h-[550px] rounded-full mt-[3rem] md:mt-[0rem]">      <Image
-        src="/profileImage.jpg"
+        src="/user.jpeg"
         alt="user"
         layout="fill"
         objectFit="cover"

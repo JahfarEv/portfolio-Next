@@ -77,7 +77,7 @@ const Hero = () => {
           </p>
 
           <div className="mt-6 md:mt-[2rem] flex justify-center lg:justify-start gap-4 flex-col sm:flex-row">
-            <Link href="https://drive.google.com/file/d/15x8WHLoxMKJrpN7td5bl1xReAHnhm04n/view?usp=sharing">
+            <Link href="https://drive.google.com/file/d/15x8WHLoxMKJrpN7td5bl1xReAHnhm04n/view?usp=sharing" target="blanck">
               <button className="px-4 py-2 md:px-[2rem] md:py-[1rem] hover:bg-teal-500 transition-all duration-200 text-[14px] md:text-[18px] font-bold uppercase bg-white text-black flex items-center gap-2 mx-auto lg:mx-0">
                 <p>Download CV</p>
                 <ArrowDownTrayIcon className="w-4 h-4 md:w-[1.6rem] md:h-[1.7rem] text-black" />
@@ -90,7 +90,7 @@ const Hero = () => {
         <div className="order-1 lg:order-2 flex justify-center lg:justify-end self-end w-full">
           <div className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[550px] lg:h-[550px] rounded-full">
             <Image
-              src="/proimages.jpg"
+              src="/profile1.jpeg"
               alt="user"
               layout="fill"
               objectFit="cover"
