@@ -15,7 +15,7 @@ const Footer = () => {
       </div>
       <div>
         <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white">Address</h1>
-        <p className="text-[14px] w-[90%] text-white opacity-60">Lorem, ipsum dolor</p>
+        <p className="text-[14px] w-[90%] text-white opacity-60">Calicut, Kerala, India</p>
       </div>
     </div>
     <div className="flex items-center space-x-6">
@@ -26,9 +26,8 @@ const Footer = () => {
         <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white">Phone</h1>
         <p className="text-[14px] w-[90%] text-white opacity-60">
           +919539794665 <br />
-          +919633456699
         </p>
-      </div>
+      </div>  
     </div>
     <div className="flex items-center space-x-6">
       <div className="md:w-[6.5rem] md:h-[6.5rem] w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-teal-400">
@@ -37,7 +36,6 @@ const Footer = () => {
       <div>
         <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white">Email</h1>
         <p className="text-[14px] w-[90%] text-white opacity-60">
-          evjahfar@gmail.com <br />
           evjahfarali@gmail.com
         </p>
       </div>

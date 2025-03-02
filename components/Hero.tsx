@@ -77,7 +77,7 @@ const Hero = () => {
           </p>
 
           <div className="mt-6 md:mt-[2rem] flex justify-center lg:justify-start gap-4 flex-col sm:flex-row">
-            <Link href="https://drive.google.com/file/d/15x8WHLoxMKJrpN7td5bl1xReAHnhm04n/view?usp=sharing" target="blanck">
+            <Link href="https://drive.google.com/file/d/1jPn9lYnXgIoFmkV0VzwbHxaPXDehEnXD/view?usp=sharing" target="blanck">
               <button className="px-4 py-2 md:px-[2rem] md:py-[1rem] hover:bg-teal-500 transition-all duration-200 text-[14px] md:text-[18px] font-bold uppercase bg-white text-black flex items-center gap-2 mx-auto lg:mx-0">
                 <p>Download CV</p>
                 <ArrowDownTrayIcon className="w-4 h-4 md:w-[1.6rem] md:h-[1.7rem] text-black" />

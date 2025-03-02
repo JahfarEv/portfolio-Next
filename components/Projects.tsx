@@ -63,9 +63,6 @@
 
 // export default Projects;
 
-
-
-
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -82,10 +79,25 @@ const Projects = () => {
       </h1>
 
       {/* Projects Grid */}
-      <div className="w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-[3rem] mt-[50px] place-items-center">
+      <div className="w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-[3rem] mt-[50px] place-items-center">
         {/* First Project */}
+
+
+
+        <Link href="https://thevyzo.com" target="blanck">
+        
+          <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[42vh] md:w-[60vh] lg:w-[50vh] h-[300px] md:h-[350px] rounded-2xl">
+            <Image
+              src="/vyzoscr.png"
+              alt="portfolio"
+              layout="fill"
+              className="object-cover border-teal-400 border-[3px] rounded-2xl"
+            />
+          </div>
+        </Link>
+            {/* Second Project */}
         <Link href="https://highhydration-web-beta.vercel.app/" target="_blank">
-          <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[42vh] md:w-[60vh] lg:w-[70vh] h-[300px] md:h-[400px] rounded-2xl">
+          <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[42vh] md:w-[60vh] lg:w-[50vh] h-[300px] md:h-[350px] rounded-2xl">
             <Image
               src="/project1.png"
               alt="portfolio"
@@ -95,36 +107,49 @@ const Projects = () => {
           </div>
         </Link>
 
-        {/* Second Project */}
-        <Link href="https://thevyzo.com" target="blanck">
-
-        <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[42vh] md:w-[60vh] lg:w-[70vh] h-[300px] md:h-[400px] rounded-2xl">
-          <Image
-            src="/vyzoscr.png"
-            alt="portfolio"
-            layout="fill"
-            className="object-cover border-teal-400 border-[3px] rounded-2xl"
-          />
-        </div>
-</Link>
+      
         {/* Third Project */}
-        <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[42vh] md:w-[60vh] lg:w-[70vh] h-[300px] md:h-[400px] rounded-2xl">
+        <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[42vh] md:w-[60vh] lg:w-[50vh] h-[300px] md:h-[350px] rounded-2xl">
           <Image
-            src="/weathernew.png"
+            src="/whatsapp-chatbot.png"
             alt="portfolio"
             layout="fill"
-            className="object-cover border-teal-400 border-[3px] rounded-2xl"
+            className=" border-teal-400 border-[3px] rounded-2xl"
           />
         </div>
 
         {/* Fourth Project */}
-        <Link href="https://fasionfinesse-beta.vercel.app/" target="_blank">
-          <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[42vh] md:w-[60vh] lg:w-[70vh] h-[300px] md:h-[400px] rounded-2xl bg-yellow-50">
+        <Link href="https://hub.thevyzo.com/" target="_blank">
+          <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[42vh] md:w-[60vh] lg:w-[50vh] h-[300px] md:h-[350px] rounded-2xl bg-yellow-50">
             <Image
-              src="/cart.png"
+              src="/hub-vyzo1.jpg"
               alt="portfolio"
               layout="fill"
-              className="object-cover border-teal-400 border-[3px] rounded-2xl"
+              className=" border-teal-400 border-[3px] rounded-2xl"
+            />
+          </div>
+        </Link>
+
+        {/* Fifth Project */}
+        <Link href="https://hub.thevyzo.com/" target="_blank">
+          <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[42vh] md:w-[60vh] lg:w-[50vh] h-[300px] md:h-[350px] rounded-2xl bg-yellow-50">
+            <Image
+              src="/hub-vyzo1.jpg"
+              alt="portfolio"
+              layout="fill"
+              className=" border-teal-400 border-[3px] rounded-2xl"
+            />
+          </div>
+        </Link>
+
+        {/* Fourth Project */}
+        <Link href="https://hub.thevyzo.com/" target="_blank">
+          <div className="transform cursor-pointer hover:-translate-y-6 transition-all duration-200 relative w-[42vh] md:w-[60vh] lg:w-[50vh] h-[300px] md:h-[350px] rounded-2xl bg-yellow-50">
+            <Image
+              src="/hub-vyzo1.jpg"
+              alt="portfolio"
+              layout="fill"
+              className=" border-teal-400 border-[3px] rounded-2xl"
             />
           </div>
         </Link>

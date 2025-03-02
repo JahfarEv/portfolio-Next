@@ -39,7 +39,7 @@ const Skills = () => {
     skill4="AWS"
     skill5="Socket IO"
     skill6="Swagger"
-    skill7="Swagger"/>
+    skill7="Postman"/>
     <SkilsLanguage
       skill1="Node js"
       skill2="Express js"
