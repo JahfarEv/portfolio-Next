@@ -23,3 +23,14 @@ html {
         @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase
     }
 }
+@layer utilities {
+    .transform-style-preserve-3d {
+      transform-style: preserve-3d;
+    }
+    .backface-hidden {
+      backface-visibility: hidden;
+    }
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+  }
