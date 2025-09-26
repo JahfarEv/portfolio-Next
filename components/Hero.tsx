@@ -57,7 +57,7 @@ import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 
 const Hero = () => {
-   const resumeUrl = "/JAHFAR-MERN.pdf";
+   const resumeUrl = "/JAHFAR ALI-RESUME.pdf";
   const resumeFileName = "JAHFAR-RESUME-NEW.pdf";
 
   const handleDownload = () => {
@@ -104,7 +104,7 @@ const Hero = () => {
         <div className="order-1 lg:order-2 flex justify-center lg:justify-end self-end w-full">
           <div className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full">
             <Image
-              src="/avatar1.jpg"
+              src="/jahfar.png"
               alt="user"
               layout="fill"
               objectFit="cover"

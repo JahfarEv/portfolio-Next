@@ -33,7 +33,7 @@ const About = () => {
     {/* Right Side - Image */}
     <div className="order-1 lg:order-2 flex justify-center lg:justify-end self-end w-full ">
     <div className="relative w-[300px] h-[300px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[550px] lg:h-[550px] rounded-full mt-[3rem] md:mt-[0rem]">      <Image
-        src="/user.jpeg"
+        src="/jahfar1.png"
         alt="user"
         layout="fill"
         objectFit="cover"
