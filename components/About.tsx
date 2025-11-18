@@ -31,16 +31,31 @@ const About = () => {
       </div>
 
     {/* Right Side - Image */}
-    <div className="order-1 lg:order-2 flex justify-center lg:justify-end self-end w-full ">
-    <div className="relative w-[300px] h-[300px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[550px] lg:h-[550px] rounded-full mt-[3rem] md:mt-[0rem]">      <Image
-        src="/jahfar1.png"
-        alt="user"
-        layout="fill"
-        objectFit="cover"
-        className="rounded-full"
-      />
-    </div>
-  </div>
+     <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+          <div className="relative group">
+            {/* Animated gradient glow */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-500 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
+            
+            {/* Image container */}
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden ring-4 ring-white/10 shadow-2xl transform transition-all duration-500 group-hover:scale-105">
+              <Image
+                src="/about.png"
+                alt="Jahfar Ali - MERN Stack Developer"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-full"
+                priority
+              />
+              
+              {/* Overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-teal-900/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            </div>
+            
+            {/* Decorative elements */}
+            <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-full blur-2xl opacity-50 animate-pulse"></div>
+            <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full blur-2xl opacity-50 animate-pulse" style={{animationDelay: '1s'}}></div>
+          </div>
+        </div>
 </div>
 </div>
     </>

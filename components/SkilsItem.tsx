@@ -9,11 +9,12 @@ interface Props {
   skill5: string;
   skill6: string;
   skill7: string;
+  skill8:string;
 
 }
 
-const SkilsItem = ({ service, skill1, skill2, skill3, skill4, skill5, skill6, skill7 }: Props) => {
-  const skills = [skill1, skill2, skill3, skill4, skill5, skill6, skill7];
+const SkilsItem = ({ service, skill1, skill2, skill3, skill4, skill5, skill6, skill7, skill8 }: Props) => {
+  const skills = [skill1, skill2, skill3, skill4, skill5, skill6, skill7,skill8];
 
   return (
     <div className="mb-[4rem] md:mb-[8rem]">

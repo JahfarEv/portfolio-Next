@@ -21,6 +21,7 @@ const Skills = () => {
       skill5="Tailwind"
       skill6="Figma"
       skill7="Typescript"
+      skill8="Electron js"
 />
     <SkilsLanguage
       skill1="Javascript"
@@ -35,6 +36,7 @@ const Skills = () => {
     <SkilsItem service="BACK END" 
     skill1="Node js"
     skill2="Express js"
+    skill8="Nest js"
     skill3="Mongo db"
     skill4="AWS"
     skill5="Socket IO"
