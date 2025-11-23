@@ -127,7 +127,7 @@ const Hero = () => {
             <div className="absolute -inset-1 bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-500 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
             
             {/* Image container */}
-            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden ring-4 ring-white/10 shadow-2xl transform transition-all duration-500 group-hover:scale-105">
+<div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden ring-4 ring-white/10 shadow-2xl transform transition-all duration-500 group-hover:scale-105 mt-12 lg:mt-0">
               <Image
                 src="/Jahfar3.png"
                 alt="Jahfar Ali - MERN Stack Developer"
