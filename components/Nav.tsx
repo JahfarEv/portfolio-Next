@@ -27,6 +27,8 @@ const Nav = ({ openNav }: Props) => {
         <div className="nav-link" onClick={() => handleScroll('about')}>ABOUT</div>
         <div className="nav-link" onClick={() => handleScroll('services')}>SERVICES</div>
         <div className="nav-link" onClick={() => handleScroll('skills')}>SKILLS</div>
+                <div className="nav-link" onClick={() => handleScroll('experience')}>EXPERIENCE</div>
+
         <div className="nav-link" onClick={() => handleScroll('projects')}>PROJECTS</div>
         <div className="nav-link" onClick={() => handleScroll('footer')}>CONTACT</div>
         <div className="flex md:hidden flex-1 justify-end">

@@ -157,9 +157,11 @@ const Projects = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-black/0 via-gray-900/40 to-black/0
+ py-12 ">
       {/* Enhanced Header */}
-      <div className="text-center mb-16 relative">
+      <div className="w-[90%] md:w-[80%] mx-auto">
+      <div className="text-center mb-16 relative ">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-64 h-64 bg-gradient-to-r from-teal-400/10 to-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
         </div>
@@ -183,7 +185,7 @@ const Projects = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="max-w-7xl mx-auto">
+      <div className=" mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {currentProjects.map((project) => (
             <div
@@ -399,7 +401,7 @@ const Projects = () => {
           projects
         </div>
       </div>
-
+</div>
     </div>
   );
 };
