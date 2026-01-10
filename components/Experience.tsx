@@ -131,7 +131,7 @@ const Experience = () => {
           <div className="w-64 h-64 bg-gradient-to-r from-purple-400/10 to-pink-500/10 rounded-full blur-3xl animate-pulse"></div>
         </div>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold relative z-10 mb-6">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold relative z-10 mb-6">
           <span className="text-white">PROFESSIONAL</span>
           <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-red-500 bg-clip-text text-transparent">
             {" "}

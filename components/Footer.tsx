@@ -144,9 +144,12 @@ const Footer = () => {
               <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white group-hover:text-cyan-300 transition-colors duration-300">
                 Phone
               </h1>
-              <p className="text-[14px] w-[90%] text-white opacity-60 group-hover:opacity-80 transition-opacity duration-300">
-                +919539794665
-              </p>
+              <a
+                href="tel:+919539794665"
+                className="text-[14px] w-[90%] text-white opacity-60 hover:opacity-80"
+              >
+                +91 95397 94665
+              </a>
             </div>
           </div>
 
@@ -159,9 +162,12 @@ const Footer = () => {
               <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white group-hover:text-cyan-300 transition-colors duration-300">
                 Email
               </h1>
-              <p className="text-[14px] w-[90%] text-white opacity-60 group-hover:opacity-80 transition-opacity duration-300">
+              <a
+                href="mailto:evjahfarali@gmail.com"
+                className="text-[14px] w-[90%] text-white opacity-60 hover:opacity-80"
+              >
                 evjahfarali@gmail.com
-              </p>
+              </a>
             </div>
           </div>
         </div>
@@ -208,22 +214,15 @@ const Footer = () => {
 
           {/* Links */}
           <div className="flex flex-col md:flex-row items-center justify-center md:justify-end space-y-2 md:space-y-0 md:space-x-10">
-            <a
-              href="#"
-              className="text-[16px] text-white opacity-60 hover:opacity-100 hover:text-cyan-300 transition-all duration-300"
-            >
-              Terms & Condition
+            <a className="text-[16px] text-white opacity-30 cursor-not-allowed">
+              Terms & Conditions
             </a>
-            <a
-              href="#"
-              className="text-[16px] text-white opacity-60 hover:opacity-100 hover:text-cyan-300 transition-all duration-300"
-            >
+
+            <a className="text-[16px] text-white opacity-30 cursor-not-allowed">
               Privacy Policy
             </a>
-            <a
-              href="#"
-              className="text-[16px] text-white opacity-60 hover:opacity-100 hover:text-cyan-300 transition-all duration-300"
-            >
+
+            <a className="text-[16px] text-white opacity-30 cursor-not-allowed">
               Sitemap
             </a>
           </div>
