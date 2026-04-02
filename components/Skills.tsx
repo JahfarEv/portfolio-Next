@@ -32,9 +32,11 @@ const Skills = () => {
               skill1="Javascript"
               skill2="React js"
               skill3="Next js"
+              skill4="Electron js"
               level1="w-[91%]"
               level2="w-[88%]"
               level3="w-[80%]"
+              level4="w-[75%]"
             />
           </div>
           <div className="flex flex-col items-center">
@@ -56,9 +58,11 @@ const Skills = () => {
               skill1="Node js"
               skill2="Express js"
               skill3="Mongodb"
+              skill4="Nest js"
               level1="w-[81%]"
               level2="w-[78%]"
               level3="w-[73%]"
+              level4="w-[70%]"
             />
           </div>
         </div>

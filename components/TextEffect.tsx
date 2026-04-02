@@ -4,13 +4,13 @@ const TextEffect = () => {
   return (
     <TypeAnimation
       sequence={[
-        "Coder",
-        1500, 
-        "Web developer",
+        "MERN Stack Developer",
         1500,
-        "Designer",
+        "Full Stack Developer", 
         1500,
-        "Programmer",
+        "SaaS Builder",
+        1500,
+        "Problem Solver",
         1500,
       ]}
       speed={50}
@@ -19,4 +19,5 @@ const TextEffect = () => {
     />
   );
 };
-export default TextEffect
+
+export default TextEffect;
