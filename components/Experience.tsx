@@ -88,7 +88,7 @@ const Experience = () => {
     window.open("https://www.linkedin.com/in/jahfarali", "_blank");
   };
   return (
-    <div className="bg-[#121121] py-16 md:py-24">
+    <div className=" py-16 md:py-24">
       <div className="w-[90%] md:w-[80%] mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">

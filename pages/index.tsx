@@ -107,21 +107,24 @@ const HomePage = () => {
         <div id="about">
           <About />
         </div>
-        <div id="experience"> {/* Add this section */}
-          <Experience />
+          <div id="skills">
+          <Skills />
         </div>
         <div id="services">
           <Services />
         </div>
-        <div id="skills">
-          <Skills />
+         
+        <div id="experience"> {/* Add this section */}
+          <Experience />
         </div>
+        
         <div id="projects">
           <Projects />
         </div>
-        {/* <div id="contact">
+     
+        <div id="contact">
           <ContactForm />
-        </div> */}
+        </div>
         <div id="footer">
           <Footer />
         </div>
