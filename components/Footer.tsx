@@ -118,56 +118,59 @@ const Footer = () => {
       <div className="absolute -top-32 -left-32 w-64 h-64 bg-cyan-500 rounded-full blur-3xl opacity-10 animate-pulse"></div>
 
       <div className="relative z-10">
-<div className="grid border-b-[1px] pb-[1rem] border-gray-400 md:grid-cols-3 gap-[1.5rem] mx-auto w-[80%] items-center justify-items-center">  {/* Address */}
-  <div className="flex items-center space-x-3 group">
-    <div className="md:w-[3.5rem] md:h-[3.5rem] w-[2.8rem] h-[2.8rem] flex items-center justify-center rounded-full bg-teal-400 group-hover:bg-cyan-400 transition-all duration-300 group-hover:scale-110">
-      <MapIcon className="md:w-[1.8rem] md:h-[1.8rem] w-[1.5rem] h-[1.5rem] text-black" />
+<div className="grid border-b-[1px] pb-[3rem] border-gray-400 grid-cols-1 md:grid-cols-3 gap-[2rem] md:gap-[1.5rem] mx-auto w-[90%] md:w-[80%]">
+  
+  {/* Address - Center on mobile, left on desktop */}
+  <div className="flex items-center space-x-3 group justify-center md:justify-start">
+    <div className="w-[3rem] h-[3rem] md:w-[3.5rem] md:h-[3.5rem] flex-shrink-0 flex items-center justify-center rounded-full bg-teal-400 group-hover:bg-cyan-400 transition-all duration-300 group-hover:scale-110">
+      <MapIcon className="w-[1.5rem] h-[1.5rem] md:w-[1.8rem] md:h-[1.8rem] text-black" />
     </div>
-    <div>
+    <div className="text-center md:text-left min-w-[120px] md:min-w-[150px]">
       <h1 className="text-[16px] md:text-[18px] mb-[0.2rem] font-semibold text-white group-hover:text-cyan-300 transition-colors duration-300">
         Address
       </h1>
-      <p className="text-[11px] md:text-[12px] w-[90%] text-white opacity-60 group-hover:opacity-80 transition-opacity duration-300">
+      <p className="text-[11px] md:text-[12px] text-white opacity-60 group-hover:opacity-80 transition-opacity duration-300 whitespace-nowrap">
         Calicut, Kerala, India
       </p>
     </div>
   </div>
 
-  {/* Phone */}
-  <div className="flex items-center space-x-3 group">
-    <div className="md:w-[3.5rem] md:h-[3.5rem] w-[2.8rem] h-[2.8rem] flex items-center justify-center rounded-full bg-teal-400 group-hover:bg-cyan-400 transition-all duration-300 group-hover:scale-110">
-      <DevicePhoneMobileIcon className="md:w-[1.8rem] md:h-[1.8rem] w-[1.5rem] h-[1.5rem] text-black" />
+  {/* Phone - Center on mobile, center on desktop */}
+  <div className="flex items-center space-x-3 group justify-center">
+    <div className="w-[3rem] h-[3rem] md:w-[3.5rem] md:h-[3.5rem] flex-shrink-0 flex items-center justify-center rounded-full bg-teal-400 group-hover:bg-cyan-400 transition-all duration-300 group-hover:scale-110">
+      <DevicePhoneMobileIcon className="w-[1.5rem] h-[1.5rem] md:w-[1.8rem] md:h-[1.8rem] text-black" />
     </div>
-    <div>
+    <div className="text-center min-w-[120px] md:min-w-[150px]">
       <h1 className="text-[16px] md:text-[18px] mb-[0.2rem] font-semibold text-white group-hover:text-cyan-300 transition-colors duration-300">
         Phone
       </h1>
       <a
         href="tel:+919539794665"
-        className="text-[11px] md:text-[12px] w-[90%] text-white opacity-60 hover:opacity-80 transition-all duration-300"
+        className="text-[11px] md:text-[12px] text-white opacity-60 hover:opacity-80 transition-all duration-300 whitespace-nowrap"
       >
         +91 95397 94665
       </a>
     </div>
   </div>
 
-  {/* Email */}
-  <div className="flex items-center space-x-3 group">
-    <div className="md:w-[3.5rem] md:h-[3.5rem] w-[2.8rem] h-[2.8rem] flex items-center justify-center rounded-full bg-teal-400 group-hover:bg-cyan-400 transition-all duration-300 group-hover:scale-110">
-      <EnvelopeIcon className="md:w-[1.8rem] md:h-[1.8rem] w-[1.5rem] h-[1.5rem] text-black" />
+  {/* Email - Center on mobile, right on desktop */}
+  <div className="flex items-center space-x-3 group justify-center md:justify-end">
+    <div className="w-[3rem] h-[3rem] md:w-[3.5rem] md:h-[3.5rem] flex-shrink-0 flex items-center justify-center rounded-full bg-teal-400 group-hover:bg-cyan-400 transition-all duration-300 group-hover:scale-110">
+      <EnvelopeIcon className="w-[1.5rem] h-[1.5rem] md:w-[1.8rem] md:h-[1.8rem] text-black" />
     </div>
-    <div>
+    <div className="text-center md:text-right min-w-[120px] md:min-w-[150px]">
       <h1 className="text-[16px] md:text-[18px] mb-[0.2rem] font-semibold text-white group-hover:text-cyan-300 transition-colors duration-300">
         Email
       </h1>
       <a
         href="mailto:evjahfarali@gmail.com"
-        className="text-[11px] md:text-[12px] w-[90%] text-white opacity-60 hover:opacity-80 transition-all duration-300"
+        className="text-[11px] md:text-[12px] text-white opacity-60 hover:opacity-80 transition-all duration-300 whitespace-nowrap md:whitespace-normal break-all"
       >
         evjahfarali@gmail.com
       </a>
     </div>
   </div>
+  
 </div>
         {/* Social Media Section */}
         <div className="w-[80%] mx-auto mt-[3rem] mb-[3rem]">

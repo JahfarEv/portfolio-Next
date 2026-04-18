@@ -99,9 +99,9 @@ const Experience = () => {
             </span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-teal-400 to-cyan-500 mx-auto rounded-full"></div>
-          <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
+          {/* <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
             From trainee to professional developer - My growth story
-          </p>
+          </p> */}
         </div>
 
         {/* Experience Timeline */}
