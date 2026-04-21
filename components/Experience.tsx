@@ -182,7 +182,7 @@ const Experience = () => {
         </div>
 
         {/* Simple Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-16">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-16">
           {[
             { number: "4", label: "Professional Roles" },
             { number: "2+", label: "Years Experience" },
@@ -204,7 +204,7 @@ const Experience = () => {
               </div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
 
         {/* Simple Call to Action */}
         <motion.div
