@@ -51,7 +51,7 @@
 //       backendOnly: false,
 //       repoLink: "#", // Add your GitHub repo link
 //     },
-      
+
 //     {
 //       id: 3,
 //       href: "https://highhydration-web-beta.vercel.app",
@@ -77,7 +77,7 @@
 //         "SEO Optimization",
 //       ],
 //     },
-     
+
 //     {
 //       id: 5,
 //       href: "https://nutrivibex-mitolyn.netlify.app/",
@@ -408,22 +408,15 @@
 
 // export default Projects;
 
-
-
-
-
-
-
-
 // import Image from "next/image";
 // import Link from "next/link";
 // import React, { useState } from "react";
-// import { 
-//   ArrowTopRightOnSquareIcon, 
-//   CodeBracketIcon, 
-//   ChevronLeftIcon, 
-//   ChevronRightIcon, 
-//   XMarkIcon 
+// import {
+//   ArrowTopRightOnSquareIcon,
+//   CodeBracketIcon,
+//   ChevronLeftIcon,
+//   ChevronRightIcon,
+//   XMarkIcon
 // } from "@heroicons/react/20/solid";
 
 // // Types
@@ -617,7 +610,7 @@
 //   return (
 //     <div className="bg-[#121121] py-16 md:py-24">
 //       <div className="w-[90%] md:w-[85%] lg:w-[80%] mx-auto">
-        
+
 //         {/* Header */}
 //         <div className="text-center mb-12 md:mb-16">
 //           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -650,7 +643,7 @@
 //                   className="object-cover transition-transform duration-700 group-hover:scale-110"
 //                 />
 //                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent"></div>
-                
+
 //                 {/* Category Badge */}
 //                 <div className="absolute top-3 left-3">
 //                   <span className={`px-2.5 py-1 text-xs font-medium rounded-full ${getCategoryColor(project.category)} text-white shadow-lg`}>
@@ -685,7 +678,7 @@
 //                 <p className="text-slate-400 text-sm mb-3 leading-relaxed line-clamp-2">
 //                   {project.description}
 //                 </p>
-                
+
 //                 {/* Tech Stack */}
 //                 <div className="flex flex-wrap gap-1.5">
 //                   {project.tech.slice(0, 3).map((tech: string, idx: number) => (
@@ -721,7 +714,7 @@
 //             >
 //               <ChevronLeftIcon className="w-5 h-5" />
 //             </button>
-            
+
 //             <div className="flex gap-2">
 //               {Array.from({ length: totalPages }, (_, i: number) => i + 1).map((page: number) => (
 //                 <button
@@ -737,7 +730,7 @@
 //                 </button>
 //               ))}
 //             </div>
-            
+
 //             <button
 //               onClick={nextPage}
 //               disabled={currentPage === totalPages}
@@ -762,11 +755,11 @@
 
 //       {/* Project Details Modal */}
 //       {selectedProject && (
-//         <div 
+//         <div
 //           className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto"
 //           onClick={closeModal}
 //         >
-//           <div 
+//           <div
 //             className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
 //             onClick={(e) => e.stopPropagation()}
 //           >
@@ -892,18 +885,19 @@
 // };
 
 // export default Projects;
+
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { 
-  ArrowTopRightOnSquareIcon, 
-  CodeBracketIcon, 
-  XMarkIcon, 
-  CheckCircleIcon, 
-  CalendarIcon, 
+import {
+  ArrowTopRightOnSquareIcon,
+  CodeBracketIcon,
+  XMarkIcon,
+  CheckCircleIcon,
+  CalendarIcon,
   CpuChipIcon,
   StarIcon,
-  SparklesIcon
+  SparklesIcon,
 } from "@heroicons/react/20/solid";
 
 // Types
@@ -925,22 +919,22 @@ interface Project {
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const [activeTab, setActiveTab] = useState<"all" | "main" | "mini">("all");
+  const [activeTab, setActiveTab] = useState<"main" | "mini">("main");
 
   // Handle body scroll when modal opens/closes
   useEffect(() => {
     if (selectedProject) {
-      document.body.style.overflow = 'hidden';
-      document.body.style.position = 'fixed';
-      document.body.style.width = '100%';
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
       document.body.style.top = `-${window.scrollY}px`;
     } else {
       const scrollY = document.body.style.top;
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
-      document.body.style.top = '';
-      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.top = "";
+      window.scrollTo(0, parseInt(scrollY || "0") * -1);
     }
   }, [selectedProject]);
 
@@ -949,31 +943,44 @@ const Projects: React.FC = () => {
       id: 1,
       href: "#",
       image: "/pok3.png",
-      title: "PocketStore – Location-Based Multi-Shop Shopping Platform",
-      description: "Complete backend and admin panel for a location-based multi-shop platform where users can register and create their own shops.",
+      title: "PocketStore – Multi-Vendor Location-Based Commerce Platform",
+      description:
+        "Complete backend and admin panel for a location-based multi-shop platform where users can register and create their own shops.",
       category: "Full Stack",
-      tech: ["Node.js", "Express.js", "MongoDB", "JWT", "Razorpay", "Cloudinary", "React.js", "Nginx", "PM2", "DigitalOcean"],
+      tech: [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "Razorpay",
+        "Cloudinary",
+        "React.js",
+        "Nginx",
+        "PM2",
+        "DigitalOcean",
+      ],
       backendOnly: false,
       features: [
         "Multi-role system (Customer, Shop Owner, Admin, Manager, Salesman)",
         "Subscription-based shop activation & product listing",
         "Location-based shop & product discovery",
-        "Stripe payment gateway integration",
+        "Razorpay payment gateway integration",
         "RESTful APIs for shop & product management",
         "Optimized MongoDB search queries",
         "JWT authentication & role-based authorization",
-        "DigitalOcean deployment with Nginx & PM2"
+        "DigitalOcean deployment with Nginx & PM2",
       ],
       date: "2024",
       isMain: true,
-      role: "Full Stack Developer"
+      role: "Full Stack Developer",
     },
     {
       id: 2,
       href: "#",
       image: "/siyana1.png",
-      title: "Jewellery E-Commerce Platform",
-      description: "Complete e-commerce solution with customer website and admin panel for jewellery business.",
+      title: "Siyana – Jewellery E-Commerce & Admin Management System",
+      description:
+        "Complete e-commerce solution with customer website and admin panel for jewellery business.",
       category: "Full Stack",
       tech: ["Next.js", "React.js", "Tailwind CSS", "Firebase"],
       backendOnly: false,
@@ -985,86 +992,177 @@ const Projects: React.FC = () => {
         "Daily gold rate update system",
         "Banner & offer management",
         "Customer management module",
-        "Real-time Firebase synchronization"
+        "Real-time Firebase synchronization",
       ],
       date: "2024",
       isMain: true,
-      role: "Full Stack Developer"
+      role: "Full Stack Developer",
     },
     {
-      id: 3,
-      href: "#",
-      image: "/project1.png",
-      title: "Retail POS Management System",
-      description: "Desktop-based Point of Sale application for retail shops with complete billing and inventory management.",
+      id: 6,
+      href: "https://highhydration-web-beta.vercel.app/",
+      image: "/hihydration.png",
+      title: "High Hydration – Real-Time Water Supply Chain Management Platform",
+      description:
+        "Real-time, role-based mineral water distribution system connecting admin, suppliers, and customers with live order tracking and efficient supply chain management.",
       category: "Full Stack",
-      tech: ["Electron.js", "Express.js", "MongoDB"],
+      tech: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Socket.IO",
+        "Tailwind CSS",
+      ],
       backendOnly: false,
       features: [
-        "Desktop application with Electron.js",
-        "Complete sales workflow & invoice generation",
-        "Automatic stock deduction",
-        "Revenue tracking & daily sales reports",
-        "Product management & inventory tracking",
-        "Structured MongoDB schemas",
-        "Real-time data consistency"
+        "Role-based access control (Admin, Supplier, User)",
+        "Real-time order tracking using Socket.IO",
+        "Product & supplier management system",
+        "Live order updates and distribution tracking",
+        "Secure authentication & authorization",
+        "RESTful API architecture for scalable operations",
+        "Optimized MongoDB queries for high performance",
+        "Seamless frontend-backend integration",
       ],
       date: "2024",
       isMain: true,
-      role: "Full Stack Developer"
+      role: "Backend & Full Stack Developer",
+      repoLink: "YOUR_GITHUB_LINK",
     },
     {
       id: 4,
-      href: "https://hubvyzo.netlify.app",
-      image: "/hub-vyzo1.jpg",
-      title: "Vyzo – Doctor & Patient Token Management System",
-      description: "Real-time token management system with separate Doctor and Patient applications.",
+      href: "#",
+      image: "/vyzo.png",
+      title: "Vyzo – Real-Time Hospital Queue & Token Management System",
+      description:
+        "Real-time doctor–patient token management system with separate Doctor and Patient applications, featuring live token updates and consultation management.",
       category: "Full Stack",
-      tech: ["React", "Node.js", "MongoDB", "Socket.IO", "JWT", "Tailwind CSS"],
+      tech: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Socket.IO",
+        "JWT",
+        "Tailwind CSS",
+      ],
       backendOnly: false,
       features: [
-        "Real-time token management",
-        "Separate Doctor & Patient apps",
-        "JWT authentication & RBAC",
-        "Live token updates with Socket.IO",
-        "Consultation timing & break management",
-        "Estimated wait time calculation",
-        "High concurrency support"
+        "Real-time token management system with separate Doctor & Patient apps",
+        "Secure JWT-based authentication & role-based access control (RBAC)",
+        "Backend APIs for daily token creation and management",
+        "Consultation timing & break management system",
+        "Token completion workflow with status tracking",
+        "Socket.IO integration for live token updates",
+        "Estimated consultation time calculation algorithm",
+        "Real-time synchronization between Doctor and Patient applications",
+        "Optimized MongoDB schemas for high performance",
+        "Centralized error handling for stability",
+        "High concurrency support for multiple users",
+        "Complete token history and reporting",
       ],
       date: "2024",
       isMain: true,
-      role: "Full Stack Developer"
-    }
+      role: "Backend & Full Stack Developer",
+      repoLink: "https://github.com/jahfar-io/vyzo-backend",
+    },
+    {
+      id: 5,
+      href: "https://pos-management-xzua.vercel.app/",
+      image: "/pos.png",
+      title: "SmartPOS – Real-Time Billing & Inventory Management System",
+      description:
+        "Full-featured POS system with inventory management, category-based product browsing, and real-time billing interface with seamless user experience.",
+      category: "Full Stack",
+      tech: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+      backendOnly: false,
+      features: [
+        "Secure user authentication & authorization",
+        "Complete product & category management (CRUD)",
+        "Modern POS billing screen with cart system",
+        "Barcode & search-based product selection",
+        "Category-wise filtering with infinite scrolling",
+        "Real-time quantity update and price calculation",
+        "Responsive UI with Tailwind CSS",
+        "Optimized MongoDB schema for scalability",
+        "RESTful API architecture with clean structure",
+        "High-performance handling for large inventories",
+      ],
+      date: "2024",
+      isMain: true,
+      role: "Full Stack Developer",
+      repoLink: "YOUR_GITHUB_LINK",
+    },
   ];
 
   const miniProjects: Project[] = [
     {
       id: 5,
-      href: "#",
-      image: "/pok3.png",
-      title: "Multi-Store Management PWA",
-      description: "Progressive Web App for multi-store management with admin and shop modules.",
-      category: "Frontend",
-      tech: ["React.js", "Tailwind CSS", "Firebase", "PWA"],
+      href: "https://shop-daily-account.netlify.app",
+      image: "/pwa-shop.png",
+      title: "Shop Daily – Multi-Shop Financial Tracking PWA",
+      description:
+        "Progressive Web App with separate Admin and Shop applications for managing multiple shops, tracking daily transactions, and generating financial reports with real-time sync and offline support.",
+      category: "Full Stack",
+      tech: [
+        "React.js",
+        "Firebase Realtime DB",
+        "Tailwind CSS",
+        "PWA",
+        "Vite",
+        "date-fns",
+      ],
       backendOnly: false,
       features: [
-        "PWA with offline support",
-        "Separate Admin & Shop modules",
-        "Auto-generated shop credentials",
-        "Sales, expenses & transaction tracking",
-        "Admin panel for shop monitoring",
-        "Real-time Firebase sync"
+        "Dual Application Architecture (Admin Panel + Shop App)",
+        "Admin Dashboard for managing multiple shops and monitoring data",
+        "Shop-specific app for daily transaction tracking and expense management",
+        "Secure authentication with Firebase (role-based access)",
+        "Real-time data synchronization using Firebase Realtime DB",
+        "Monthly financial reports with balance calculations",
+        "Offline support with PWA caching and installable experience",
+        "Edit/Delete transactions with confirmation handling",
+        "User-specific data isolation per shop",
+        "Mobile-first responsive UI with bottom navigation",
+        "Glassmorphism design with modern UI/UX",
+        "Month-wise filtering and reporting system",
       ],
-      date: "2024",
-      isMain: false,
-      role: "Frontend Developer"
+      date: "2025",
+      isMain: true,
+      role: "Full Stack Developer",
+      repoLink: "https://github.com/jahfar-io/shop-daily-account",
     },
+    // {
+    //   id: 6,
+    //   href: "#",
+    //   image: "/pok3.png",
+    //   title: "Multi-Store Management PWA",
+    //   description:
+    //     "Progressive Web App for multi-store management with admin and shop modules.",
+    //   category: "Frontend",
+    //   tech: ["React.js", "Tailwind CSS", "Firebase", "PWA"],
+    //   backendOnly: false,
+    //   features: [
+    //     "PWA with offline support",
+    //     "Separate Admin & Shop modules",
+    //     "Auto-generated shop credentials",
+    //     "Sales, expenses & transaction tracking",
+    //     "Admin panel for shop monitoring",
+    //     "Real-time Firebase sync",
+    //   ],
+    //   date: "2024",
+    //   isMain: false,
+    //   role: "Frontend Developer",
+    // },
+
     {
-      id: 6,
+      id: 7,
       href: "https://poketstor.com",
-      image: "/pok3.png",
-      title: "PoketStore Landing Page",
-      description: "Official landing page for PoketStore platform with conversion-focused design.",
+      image: "/poketstor.png",
+      title: "PocketStore – Conversion-Focused Product Landing Page",
+      description:
+        "Official landing page for PoketStore platform with conversion-focused design.",
       category: "Marketing",
       tech: ["React.js", "Tailwind CSS"],
       backendOnly: false,
@@ -1072,18 +1170,19 @@ const Projects: React.FC = () => {
         "Responsive UI design",
         "Conversion-focused layout",
         "Performance optimized",
-        "SEO basics"
+        "SEO basics",
       ],
       date: "2024",
       isMain: false,
-      role: "Frontend Developer"
+      role: "Frontend Developer",
     },
     {
-      id: 7,
+      id: 8,
       href: "https://www.sabukottotty.com/",
       image: "/sabu.png",
-      title: "Professional Portfolio Website",
-      description: "Modern portfolio website with optimized performance and clean design.",
+      title: "Modern Portfolio Website – High-Performance Personal Branding Site",
+      description:
+        "Modern portfolio website with optimized performance and clean design.",
       category: "Frontend",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
       backendOnly: false,
@@ -1091,18 +1190,19 @@ const Projects: React.FC = () => {
         "Modern portfolio layout",
         "Performance optimized",
         "Responsive design",
-        "Clean UI/UX"
+        "Clean UI/UX",
       ],
       date: "2024",
       isMain: false,
-      role: "Frontend Developer"
+      role: "Frontend Developer",
     },
     {
-      id: 8,
-      href: "#",
-      image: "/vyzoscr.png",
+      id: 9,
+      href: "https://www.teamvirton.in/",
+      image: "/virto.png",
       title: "Virton & Team Virton Websites",
-      description: "Corporate websites and landing pages for Virton platform and services.",
+      description:
+        "Corporate websites and landing pages for Virton platform and services.",
       category: "Frontend",
       tech: ["React.js", "Tailwind CSS"],
       backendOnly: false,
@@ -1110,81 +1210,104 @@ const Projects: React.FC = () => {
         "Corporate website design",
         "Service presentation",
         "Responsive layout",
-        "SEO optimization"
+        "SEO optimization",
       ],
       date: "2024",
       isMain: false,
-      role: "Frontend Developer"
+      role: "Frontend Developer",
     },
     {
-      id: 9,
+      id: 10,
       href: "https://nutrivibex-mitolyn.netlify.app/",
       image: "/mitolyn.png",
       title: "Mitolyn Landing Page",
-      description: "Conversion-optimized marketing landing page for supplement product.",
+      description:
+        "Conversion-optimized marketing landing page for supplement product.",
       category: "Marketing",
       tech: ["React", "Tailwind CSS"],
       backendOnly: false,
       features: ["Responsive Design", "SEO Optimized", "Fast Loading"],
       date: "2024",
       isMain: false,
-      role: "Frontend Developer"
+      role: "Frontend Developer",
     },
     {
-      id: 10,
+      id: 11,
       href: "https://nutrivibex-smoothiedeit.netlify.app/",
       image: "/smoothie.png",
       title: "Smoothie Diet Landing Page",
-      description: "Clean affiliate marketing landing page focused on conversions.",
+      description:
+        "Clean affiliate marketing landing page focused on conversions.",
       category: "Marketing",
       tech: ["React", "Tailwind CSS"],
       backendOnly: false,
       features: ["Mobile Responsive", "Fast Loading", "Clean Design"],
       date: "2024",
       isMain: false,
-      role: "Frontend Developer"
+      role: "Frontend Developer",
     },
+    
     {
-      id: 11,
+      id: 13,
       href: "#",
-      image: "/whatsapp-chatbot.png",
-      title: "WhatsApp Chatbot",
-      description: "Automated chatbot for doctor availability and appointment inquiries.",
-      category: "Backend",
-      tech: ["Node.js", "Express", "WhatsApp API"],
-      backendOnly: true,
-      features: ["Automated Responses", "Real-time Queries", "24/7 Operation"],
-      date: "2024",
+      image: "/pwa-shop.png",
+      title: "Shop Daily Account PWA - Shop Management",
+      description:
+        "Progressive Web App for shop owners to manage daily transactions, track expenses, and generate monthly reports with offline support.",
+      category: "Full Stack",
+      tech: ["React.js", "Firebase", "Tailwind CSS", "PWA", "Vite", "date-fns"],
+      backendOnly: false,
+      features: [
+        "Complete authentication system (Login/Register)",
+        "Daily transaction management (Cash, Card, Market, Expense)",
+        "Monthly reports with opening balance adjustment",
+        "Edit and delete functionality for daily entries",
+        "Real-time Firebase database sync",
+        "PWA with offline support & installable on mobile",
+        "Glassmorphism UI design with blue/white theme",
+        "Responsive design for mobile & desktop",
+        "Month navigation with automatic balance calculation",
+        "Secure data isolation per user",
+      ],
+      date: "2025",
       isMain: false,
-      role: "Backend Developer"
-    }
+      role: "Full Stack Developer",
+      repoLink: "https://github.com/jahfar-io/shop-daily-account",
+    },
   ];
-
-  const allProjects = [...mainProjects, ...miniProjects];
 
   const getDisplayProjects = () => {
     if (activeTab === "main") return mainProjects;
-    if (activeTab === "mini") return miniProjects;
-    return allProjects;
+    return miniProjects;
   };
 
   const getCategoryColor = (category: string): string => {
     switch (category) {
-      case 'Full Stack': return 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20';
-      case 'Backend': return 'text-purple-400 bg-purple-400/10 border-purple-400/20';
-      case 'Frontend': return 'text-blue-400 bg-blue-400/10 border-blue-400/20';
-      case 'Marketing': return 'text-orange-400 bg-orange-400/10 border-orange-400/20';
-      default: return 'text-gray-400 bg-gray-400/10 border-gray-400/20';
+      case "Full Stack":
+        return "text-emerald-400 bg-emerald-400/10 border-emerald-400/20";
+      case "Backend":
+        return "text-purple-400 bg-purple-400/10 border-purple-400/20";
+      case "Frontend":
+        return "text-blue-400 bg-blue-400/10 border-blue-400/20";
+      case "Marketing":
+        return "text-orange-400 bg-orange-400/10 border-orange-400/20";
+      default:
+        return "text-gray-400 bg-gray-400/10 border-gray-400/20";
     }
   };
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
-      case 'Full Stack': return '🚀';
-      case 'Backend': return '⚙️';
-      case 'Frontend': return '🎨';
-      case 'Marketing': return '📈';
-      default: return '💻';
+      case "Full Stack":
+        return "🚀";
+      case "Backend":
+        return "⚙️";
+      case "Frontend":
+        return "🎨";
+      case "Marketing":
+        return "📈";
+      default:
+        return "💻";
     }
   };
 
@@ -1199,7 +1322,6 @@ const Projects: React.FC = () => {
   return (
     <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 py-20 md:py-28">
       <div className="w-[90%] md:w-[80%] mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-block mb-4">
@@ -1218,19 +1340,9 @@ const Projects: React.FC = () => {
           </p>
         </div>
 
-        {/* Category Tabs */}
+        {/* Category Tabs - Only Main and Mini */}
         <div className="flex justify-center mb-12">
           <div className="inline-flex bg-white/5 rounded-full p-1 backdrop-blur-sm border border-white/10">
-            <button
-              onClick={() => setActiveTab("all")}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeTab === "all"
-                  ? "bg-gradient-to-r from-emerald-500 to-cyan-500 text-white shadow-lg"
-                  : "text-slate-400 hover:text-white"
-              }`}
-            >
-              All Projects
-            </button>
             <button
               onClick={() => setActiveTab("main")}
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 ${
@@ -1261,64 +1373,71 @@ const Projects: React.FC = () => {
           {getDisplayProjects().map((project) => (
             <div
               key={project.id}
-              className={`group bg-white/5 rounded-xl overflow-hidden border transition-all duration-300 hover:-translate-y-1 cursor-pointer backdrop-blur-sm ${
-                project.isMain 
-                  ? "border-emerald-500/30 hover:border-emerald-500/50 shadow-lg shadow-emerald-500/5" 
+              className={`group bg-white/5 rounded-xl overflow-hidden border transition-all duration-300 hover:-translate-y-1 cursor-pointer backdrop-blur-sm flex flex-col ${
+                project.isMain
+                  ? "border-emerald-500/30 hover:border-emerald-500/50 shadow-lg shadow-emerald-500/5"
                   : "border-white/10 hover:border-emerald-500/30"
               }`}
               onClick={() => handleProjectClick(project)}
             >
-              {/* Image */}
-              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900">
+              {/* Image - Fixed height with object-cover to fill */}
+              <div className="relative h-52 overflow-hidden bg-gradient-to-br from-slate-800 to-slate-100 flex-shrink-0 ">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105 p-2 rounded-2xl"
+                  priority={project.id <= 3}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent"></div>
-                
+
                 {/* Main Project Badge */}
                 {project.isMain && (
-                  <div className="absolute top-3 left-3">
+                  <div className="absolute top-3 left-3 z-10">
                     <span className="px-2.5 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-emerald-500 to-cyan-500 text-white shadow-lg flex items-center gap-1">
                       <StarIcon className="w-3 h-3" />
                       Main Project
                     </span>
                   </div>
                 )}
-                
+
                 {/* Category Badge */}
-                <div className={`absolute ${project.isMain ? "top-3 right-3" : "top-3 left-3"}`}>
-                  <span className={`px-2.5 py-1 text-xs font-medium rounded-full border ${getCategoryColor(project.category)} backdrop-blur-sm`}>
+                <div
+                  className={`absolute ${project.isMain ? "top-3 right-3" : "top-3 left-3"} z-10`}
+                >
+                  <span
+                    className={`px-2.5 py-1 text-xs font-medium rounded-full border ${getCategoryColor(project.category)} backdrop-blur-sm`}
+                  >
                     {getCategoryIcon(project.category)} {project.category}
                   </span>
                 </div>
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
                   <span className="px-4 py-2 bg-white/10 backdrop-blur-md rounded-full text-white text-sm font-medium border border-white/20">
                     View Details →
                   </span>
                 </div>
               </div>
 
-              {/* Content */}
-              <div className="p-5">
-                <h3 className={`text-lg font-semibold mb-2 transition-colors line-clamp-2 ${
-                  project.isMain 
-                    ? "text-emerald-400 group-hover:text-emerald-300" 
-                    : "text-white group-hover:text-emerald-400"
-                }`}>
+              {/* Content - Takes remaining space */}
+              <div className="p-5 flex-1 flex flex-col">
+                <h3
+                  className={`text-lg font-semibold mb-2 transition-colors line-clamp-2 ${
+                    project.isMain
+                      ? "text-emerald-400 group-hover:text-emerald-300"
+                      : "text-white group-hover:text-emerald-400"
+                  }`}
+                >
                   {project.title}
                 </h3>
-                <p className="text-slate-400 text-sm mb-3 line-clamp-2">
+                <p className="text-slate-400 text-sm mb-3 line-clamp-2 flex-1">
                   {project.description}
                 </p>
-                
+
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-1.5 mt-auto">
                   {project.tech.slice(0, 3).map((tech, idx) => (
                     <span
                       key={idx}
@@ -1337,32 +1456,34 @@ const Projects: React.FC = () => {
             </div>
           ))}
         </div>
-
         {/* Stats */}
         <div className="mt-12 text-center">
           <p className="text-slate-500 text-sm">
-            Showing {getDisplayProjects().length} {activeTab === "main" ? "main" : activeTab === "mini" ? "mini" : "total"} projects
+            Showing {getDisplayProjects().length} {activeTab} projects
           </p>
         </div>
       </div>
 
-      {/* Modal - Fixed positioning with higher z-index and larger width */}
+      {/* Modal */}
       {selectedProject && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/95 backdrop-blur-md z-[9999] flex items-center justify-center p-4 overflow-y-auto"
           onClick={closeModal}
-          style={{ position: 'fixed', top: 50, left: 0, right: 0, bottom: 0 }}
+          style={{ position: "fixed", top: 50, left: 0, right: 0, bottom: 0 }}
         >
-          <div 
-className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl max-w-5xl w-full max-h-[75vh] overflow-y-auto no-scrollbar border border-white/10 shadow-2xl my-auto"            onClick={(e) => e.stopPropagation()}
+          <div
+            className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl max-w-5xl w-full max-h-[75vh] overflow-y-auto no-scrollbar border border-white/10 shadow-2xl my-auto"
+            onClick={(e) => e.stopPropagation()}
           >
             {/* Decorative Header Bar */}
-            <div className={`sticky top-0 z-10 h-1 bg-gradient-to-r ${
-              selectedProject.isMain 
-                ? "from-emerald-400 via-cyan-400 to-emerald-400" 
-                : "from-blue-400 via-cyan-400 to-blue-400"
-            }`}></div>
-            
+            <div
+              className={`sticky top-0 z-10 h-1 bg-gradient-to-r ${
+                selectedProject.isMain
+                  ? "from-emerald-400 via-cyan-400 to-emerald-400"
+                  : "from-blue-400 via-cyan-400 to-blue-400"
+              }`}
+            ></div>
+
             {/* Close Button */}
             <button
               onClick={closeModal}
@@ -1382,8 +1503,11 @@ className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl ma
                       Main Project
                     </span>
                   )}
-                  <span className={`px-3 py-1 text-sm font-medium rounded-full border ${getCategoryColor(selectedProject.category)} backdrop-blur-sm`}>
-                    {getCategoryIcon(selectedProject.category)} {selectedProject.category}
+                  <span
+                    className={`px-3 py-1 text-sm font-medium rounded-full border ${getCategoryColor(selectedProject.category)} backdrop-blur-sm`}
+                  >
+                    {getCategoryIcon(selectedProject.category)}{" "}
+                    {selectedProject.category}
                   </span>
                   {selectedProject.backendOnly && (
                     <span className="px-3 py-1 text-sm font-medium rounded-full border text-orange-400 bg-orange-400/10 border-orange-400/20">
@@ -1396,7 +1520,8 @@ className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl ma
                 </h2>
                 {selectedProject.role && (
                   <p className="text-emerald-400 text-sm mt-2 flex items-center gap-1">
-                    <span className="text-slate-400">Role:</span> {selectedProject.role}
+                    <span className="text-slate-400">Role:</span>{" "}
+                    {selectedProject.role}
                   </p>
                 )}
               </div>
@@ -1409,24 +1534,32 @@ className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl ma
               </div>
 
               {/* Features */}
-              {selectedProject.features && selectedProject.features.length > 0 && (
-                <div className="mb-8">
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="w-8 h-8 rounded-full bg-emerald-400/10 flex items-center justify-center">
-                      <CheckCircleIcon className="w-4 h-4 text-emerald-400" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-white">Key Features</h3>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    {selectedProject.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center gap-2 p-2 rounded-lg bg-white/5 border border-white/5">
-                        <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full"></div>
-                        <span className="text-slate-300 text-sm">{feature}</span>
+              {selectedProject.features &&
+                selectedProject.features.length > 0 && (
+                  <div className="mb-8">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="w-8 h-8 rounded-full bg-emerald-400/10 flex items-center justify-center">
+                        <CheckCircleIcon className="w-4 h-4 text-emerald-400" />
                       </div>
-                    ))}
+                      <h3 className="text-lg font-semibold text-white">
+                        Key Features
+                      </h3>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                      {selectedProject.features.map((feature, idx) => (
+                        <div
+                          key={idx}
+                          className="flex items-center gap-2 p-2 rounded-lg bg-white/5 border border-white/5"
+                        >
+                          <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full"></div>
+                          <span className="text-slate-300 text-sm">
+                            {feature}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
 
               {/* Tech Stack */}
               <div className="mb-8">
@@ -1434,7 +1567,9 @@ className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl ma
                   <div className="w-8 h-8 rounded-full bg-purple-400/10 flex items-center justify-center">
                     <CpuChipIcon className="w-4 h-4 text-purple-400" />
                   </div>
-                  <h3 className="text-lg font-semibold text-white">Tech Stack</h3>
+                  <h3 className="text-lg font-semibold text-white">
+                    Tech Stack
+                  </h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {selectedProject.tech.map((tech, idx) => (
@@ -1455,54 +1590,51 @@ className="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl ma
                     <CalendarIcon className="w-4 h-4 text-slate-400" />
                     <div>
                       <p className="text-slate-500 text-xs">Completed</p>
-                      <p className="text-white text-sm font-medium">{selectedProject.date || "2024"}</p>
+                      <p className="text-white text-sm font-medium">
+                        {selectedProject.date || "2024"}
+                      </p>
                     </div>
                   </div>
                   <div className="w-px h-8 bg-white/10 hidden sm:block"></div>
                   <div>
                     <p className="text-slate-500 text-xs">Project Type</p>
-                    <p className="text-white text-sm font-medium">{selectedProject.backendOnly ? "Backend API" : "Full Application"}</p>
+                    <p className="text-white text-sm font-medium">
+                      {selectedProject.backendOnly
+                        ? "Backend API"
+                        : "Full Application"}
+                    </p>
                   </div>
                   <div className="w-px h-8 bg-white/10 hidden sm:block"></div>
                   <div>
                     <p className="text-slate-500 text-xs">Status</p>
-                    <p className="text-emerald-400 text-sm font-medium">● Active</p>
+                    <p className="text-emerald-400 text-sm font-medium">
+                      ● Active
+                    </p>
                   </div>
                 </div>
               </div>
 
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3">
-                {!selectedProject.backendOnly && selectedProject.href !== "#" ? (
-                  <Link
-                    href={selectedProject.href}
-                    target="_blank"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg shadow-emerald-500/20"
-                  >
-                    <ArrowTopRightOnSquareIcon className="w-5 h-5" />
-                    <span>Live Demo</span>
-                  </Link>
-                ) : selectedProject.repoLink && selectedProject.repoLink !== "#" ? (
-                  <Link
-                    href={selectedProject.repoLink}
-                    target="_blank"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-xl transition-all duration-300"
-                  >
-                    <CodeBracketIcon className="w-5 h-5" />
-                    <span>View Code</span>
-                  </Link>
-                ) : (
-                  <div className="flex-1 text-center px-6 py-3 bg-white/5 text-slate-400 font-medium rounded-xl border border-white/10">
-                    🔧 Backend API Project
-                  </div>
-                )}
-                <button
-                  onClick={closeModal}
-                  className="px-6 py-3 bg-white/5 hover:bg-white/10 text-white font-medium rounded-xl transition-all duration-300 border border-white/10"
-                >
-                  Close
-                </button>
-              </div>
+            <div className="flex justify-between items-center gap-3">
+  {/* Only show Live Demo if href is not "#" */}
+  {!selectedProject.backendOnly && selectedProject.href !== "#" && (
+    <Link
+      href={selectedProject.href}
+      target="_blank"
+      className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg shadow-emerald-500/20"
+    >
+      <ArrowTopRightOnSquareIcon className="w-5 h-5" />
+      <span>Live Demo</span>
+    </Link>
+  )}
+  
+  {/* Close button - right aligned */}
+  <button
+    onClick={closeModal}
+    className="px-6 py-3 bg-white/5 hover:bg-white/10 text-white font-medium rounded-xl transition-all duration-300 border border-white/10 ml-auto"
+  >
+    Close
+  </button>
+</div>
             </div>
           </div>
         </div>
